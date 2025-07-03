@@ -67,11 +67,38 @@ print("Table is Created.")
 
 # ◑ Print the elements of the following list using a loop:
 #     [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+"""
+nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
+#traverse
+idx = 0
+while idx < len(nums):
+    print(nums[idx]) #nums[0], nums[1], nums[2]...
+    # print("On",idx,"index is",nums[idx]) #nums[0], nums[1], nums[2]...
+    idx += 1
+"""
+    
+# ◑ Search for a number x in this tuple using loop:
+#     (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+"""
+nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
+x = int(input("Enter Search Number :"))
 
+i = 0 #intiaization
+while i < len(nums):
+    if(nums[i] == x):
+        print("FOUND at index", i)
+    # elif(nums[i] != x):
+    #     print("NOT FOUND")
+    # else:
+    #     print("finding..")
+    i += 1
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Break & Continue
 
 
 
