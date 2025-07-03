@@ -1,9 +1,2 @@
-list1 = [1, 2, 1]
-
-copy_list1 = list1.copy()
-copy_list1.reverse()
-
-if(copy_list1 == list1):
-    print("PELINDROME")
-else:
-    print("NOT PELINDROME")
+for i in range(2, 10): #range(start, stop)
+#     print(i)

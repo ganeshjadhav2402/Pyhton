@@ -181,7 +181,7 @@ for val in num:
 # ◑ Search for a number x in this tuple using loop:
 """
 num = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 49)
-x = int(input("Enter Search Number: "))
+x = int(input("Enter Search Number: ")) #this is linear search
 
 idx = 0
 for el in num:
@@ -198,19 +198,83 @@ for el in num:
 # 1 (by default), and stops before a specified number.
 
 # range(start?, stop, step?)  ◑" ? ":means optional vlaue
+# for i in range(10): #range(stop)
+#     print(i)
+    
+# for i in range(2, 10): #range(start, stop)
+#     print(i)
 
+# for i in range(2, 10, 2): #range(start, stop, step)
+#     print(i)
 
+"""
+# for i in range(2, 101, 2): #for EVEN numbers
+for i in range(1, 100, 2): #for ODD numbers
+    print(i)
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Let's Practice
+# ◑ Print numbers from 1 to 100.+-
+"""
+for num in range(1, 101):
+    print(num)
+"""
 
+# ◑ Print numbers from 100 to 1.
+"""
+for nums in range(100, 0, -1): #for reverse order
+    print(nums)
+"""
+    
+# ◑ Print the multiplication table of a number n.
+"""
+n = int(input("enter number : "))
 
+for i in range(1, 11):
+    print(n * i)
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# pass Statement
+# pass is a null statement that does nothing. It is used as a placeholder for future code.
+"""
+for i in range(5):
+    pass
+    
+print("some usefull work")
+"""
 
+# Let's Practice
+# ◑ WAP to find the sum of first n numbers. (using while)
+"""
+n = int(input("Enter number : "))
 
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+# for i in range(1, n+1):
+#     sum += i
 
+print("Sum of n Number =",sum)
+"""
 
+# ◑ WAP to find the factorial of first n numbers. (using for)
+n = int(input("enter number: "))
+fact = 1
+i = 1
+# while i <= n:
+#     fact *= i
+#     i += 1
+    
+for i in range(1, n+1):
+    fact *= i
 
+print("Factorial =", fact)
 
 
 
