@@ -80,6 +80,7 @@ while idx < len(nums):
     
 # ◑ Search for a number x in this tuple using loop:
 #     (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
 """
 nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
@@ -89,16 +90,46 @@ i = 0 #intiaization
 while i < len(nums):
     if(nums[i] == x):
         print("FOUND at index", i)
+        break
     # elif(nums[i] != x):
     #     print("NOT FOUND")
-    # else:
-    #     print("finding..")
+    else:
+        print("finding..")
+    i += 1
+
+print("end of loop")
+"""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+# Break & Continue
+# Break: used to terminate the loop when encountered.
+"""
+print("This is Break")
+i = 0
+while i <= 5:
+    print(i)
+    if(i == 3):
+        break
+    i += 1
+"""
+
+# Continue: terminates execution in the current iteration & continues execution of the loop with the next iteration.
+"""
+print("This is Continue")
+i = 1
+while i <= 10:
+    # if(i % 2 == 0): #for ODD numbers
+    if(i % 2 != 0): #for EVEN numbers
+        i += 1
+        continue #skip the number
+    print(i)
     i += 1
 """
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-# Break & Continue
 
 
 
