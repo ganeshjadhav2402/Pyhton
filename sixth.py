@@ -109,21 +109,66 @@ converter(100)
 """
 
 # ◑ WAF to find numbers from ODD or EVEN
+"""
 num = int(input("Enter a Number :"))
 
 def type(num):
     if(num / 2 == 0):
         print("EVEN")
+        return
     elif(num / 2 != 0):
         print("ODD")
 type(num)
-
-
+"""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Recursion in Python
+"""
+def show(n):
+    if(n == 0):
+        return
+    print(n)
+    show(n-1)
+    print("END")
 
+show(5)
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""
+def fact(n):
+    if(n == 1 or n == 0):
+        return 1
+    return fact(n-1) * n
+
+print(fact(4))
+"""
+
+# Let's Practice
+# ◑ Write a recursive function to calculate the sum of first n natural nummbers. 
+"""
+def calc_sum(n):
+    if(n == 0):
+        return 0
+    return calc_sum(n-1) + n
+
+sum = calc_sum(5)
+print(sum)
+"""
+
+# ◑ Write a recursive function to print all elements in a list.
+# Hint: use list & index as parameters.
+def print_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+    
+fruits = ["mango", "apple", "banana", "litchi"]
+
+print_list(fruits)
 
 
 
