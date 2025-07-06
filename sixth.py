@@ -109,17 +109,16 @@ converter(100)
 """
 
 # ◑ WAF to find numbers from ODD or EVEN
-"""
-num = int(input("Enter a Number :"))
+
+num = int(input("Enter a Number: "))
 
 def type(num):
-    if(num / 2 == 0):
-        print("EVEN")
+    if num % 2 == 0:
+        print(num, "is a EVEN.")
         return
-    elif(num / 2 != 0):
-        print("ODD")
+    else:
+        print(num, "is a ODD.")
 type(num)
-"""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -160,6 +159,7 @@ print(sum)
 
 # ◑ Write a recursive function to print all elements in a list.
 # Hint: use list & index as parameters.
+"""
 def print_list(list, idx=0):
     if(idx == len(list)):
         return
@@ -169,6 +169,7 @@ def print_list(list, idx=0):
 fruits = ["mango", "apple", "banana", "litchi"]
 
 print_list(fruits)
+"""
 
 
 
