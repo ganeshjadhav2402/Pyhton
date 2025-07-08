@@ -72,8 +72,11 @@ os.remove("sample.txt")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
+# Let‘s Practice
+# Create a new file “practice.txt” using python. Add the following data in it:
+with open("practice.txt", "w") as f:
+    f.write("Hi everyone\nwe are learning File I/O ")
+    f.write("using Java. \nI like programming in Java.")
 
 
 
