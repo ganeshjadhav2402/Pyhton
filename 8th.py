@@ -16,6 +16,11 @@ class Students:
 s1 = Students()
 # print(s1.name)
 
+# Constructor: All classes have a function called __init__(), which is always executed when the object is being
+# initiated.
+# *The self parameter is a reference to the current instance of the class, and is used to access variables
+# that belongs to the class.
+
 # s2 = Students()
 # print(s2.name)
 
