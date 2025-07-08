@@ -65,10 +65,12 @@ with open("demo.txt", "w")as f:
 # Module (like a code library) is a file written by another programmer that generally has
 # a functions we can use.
 
+"""
 import os
 os.remove("sample.txt")
+"""
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
