@@ -40,13 +40,13 @@ print("Model of Car :",c1.model)
 # *The self parameter is a reference to the current instance of the class, and is used to access variables
 # that belongs to the class.
 
-class Students:
+"""class Students:
     
-    """
+    
     #default constructors
     def __init__(self):
         pass   
-    """    
+     
         
     #parameterized constructors
     def __init__(self, fullname, marks):
@@ -59,7 +59,7 @@ s1 = Students("Karan", 97)
 print(s1.name, s1.marks) #Karan
 
 s2 = Students("Mahesh", 85)
-print(s2.name, s2.marks)
+print(s2.name, s2.marks)"""
 
 # Class & Instance Attributes
 # Class.attr
@@ -70,6 +70,19 @@ print(s2.name, s2.marks)
 # Methods
 # Methods are functions that belong to objects
 
+# creating class
+class Students:
+    college_name = "Naran Lala College"
+        
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    
+    def welcome(self):
+        print("welcome student,", self.name)
+    
+s1 = Students("Karan", 98)
+s1.welcome()
 
 
 
