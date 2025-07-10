@@ -4,7 +4,7 @@
 
 # Class & Object in Python
 
-
+"""
 #creating class
 class Students:
     name = "Kran Kumar"
@@ -14,12 +14,8 @@ class Students:
     
 # creating objects
 s1 = Students()
-# print(s1.name)
-
-# Constructor: All classes have a function called __init__(), which is always executed when the object is being
-# initiated.
-# *The self parameter is a reference to the current instance of the class, and is used to access variables
-# that belongs to the class.
+# print(s1)
+"""
 
 # s2 = Students()
 # print(s2.name)
@@ -36,9 +32,35 @@ print("Color of Car :",c1.color)
 print("Brand of Car :",c1.brand)
 print("Model of Car :",c1.model)
 """
+# Constructor: All classes have a function called __init__(), which is always executed when the object is being
+# initiated.
+# *The self parameter is a reference to the current instance of the class, and is used to access variables
+# that belongs to the class.
 
+class Students:
+    
+    """
+    #default constructors
+    def __init__(self):
+        pass   
+    """    
+        
+    #parameterized constructors
+    def __init__(self, fullname, marks):
+        self.name = fullname
+        self.marks = marks
+        print("adding new student in Database...")
+    
+# creating objects
+s1 = Students("Karan", 97)
+print(s1.name, s1.marks) #Karan
 
+s2 = Students("Mahesh", 85)
+print(s2.name, s2.marks)
 
+# Class & Instance Attributes
+# Class.attr
+# obj.attr
 
 
 
