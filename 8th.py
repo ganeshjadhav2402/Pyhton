@@ -32,6 +32,9 @@ print("Color of Car :",c1.color)
 print("Brand of Car :",c1.brand)
 print("Model of Car :",c1.model)
 """
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 # Constructor: All classes have a function called __init__(), which is always executed when the object is being
 # initiated.
 # *The self parameter is a reference to the current instance of the class, and is used to access variables
@@ -61,6 +64,11 @@ print(s2.name, s2.marks)
 # Class & Instance Attributes
 # Class.attr
 # obj.attr
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+# Methods
+# Methods are functions that belong to objects
 
 
 
