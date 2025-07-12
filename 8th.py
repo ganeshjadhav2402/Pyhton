@@ -82,7 +82,7 @@ class Students:
         print("welcome student,", self.name)
     
 s1 = Students("Karan", 98)
-s1.welcome()
+s1.welcome() 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
