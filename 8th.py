@@ -79,7 +79,7 @@ class Students:
         self.marks = marks
     
     def welcome(self):
-        print("welcome student,", self.name)
+        print("welcome student,", self.name, "Your Marks is", self.marks)
     
 s1 = Students("Karan", 98)
 s1.welcome() 
