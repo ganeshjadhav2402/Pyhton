@@ -71,6 +71,7 @@ print(s2.name, s2.marks)"""
 # Methods are functions that belong to objects
 
 # creating class
+"""
 class Students:
     college_name = "Naran Lala College"
         
@@ -80,25 +81,76 @@ class Students:
     
     def welcome(self):
         print("welcome student,", self.name, "Your Marks is", self.marks)
+        
+    def get_marks(self):
+        return self.marks
     
 s1 = Students("Karan", 98)
-s1.welcome() 
+s1.welcome()
+print(s1.get_marks())
+"""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Let's Practice
+# Create student class that takes name & marks of 3 subjects as arguments in constructor.
+# Then create a method to print the average.
 
+"""
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum += val
+        print("Hello", self.name, "your avg score is:", sum/3)
+        
+s1 = Student("Steave",[98, 85, 90])
+s1.get_avg()
+        
+s1.name = "Captain AM" #as per in future you chnaged attribute value
+s1.get_avg()
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Static Method
+# Methods that don't use the self perameter(work at class level)
 
+"""
+class Static:
+    @staticmethod  #decorator
+    def college():
+        print("ABC College")
+"""
+        
+# *Decorators allow us to wrap another functionin order to 
+# extend the behaviour of the wrapped function, without permanently modifying it 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Important
+# Abstraction
+# Hiding the implementation details of a class and only showing the essential features to the user.
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+    
+    def start(self):
+        self.clutch = True
+        self.acc = True
+        print("Car Started..")
 
+car1 = Car()
+car1.start()
 
-
-
-
-
-
+# Encapsulation
+# Wrapping data and functions into a single unit(objects).
 
 
 
