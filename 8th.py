@@ -152,6 +152,14 @@ car1.start()
 # Encapsulation
 # Wrapping data and functions into a single unit(objects).
 
+# Let's Practice
+# Create Account class with 2 attributes - balance & aacount no.
+# Create methods for debit, credit & printing the balance.
+
+
+
+
+
 
 
 
