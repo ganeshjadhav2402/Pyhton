@@ -135,6 +135,7 @@ class Static:
 # Important
 # Abstraction
 # Hiding the implementation details of a class and only showing the essential features to the user.
+"""
 class Car:
     def __init__(self):
         self.acc = False
@@ -148,6 +149,7 @@ class Car:
 
 car1 = Car()
 car1.start()
+"""
 
 # Encapsulation
 # Wrapping data and functions into a single unit(objects).
@@ -155,10 +157,14 @@ car1.start()
 # Let's Practice
 # Create Account class with 2 attributes - balance & aacount no.
 # Create methods for debit, credit & printing the balance.
+class Account:
+    def __init__(self, bal, acc):
+        self.balance = bal
+        self.account_no = acc
 
-
-
-
+acc1 = Account(100000, 658974235)
+print("Account Balance :",acc1.balance)
+print("Account Number  :",acc1.account_no)
 
 
 
