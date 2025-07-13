@@ -112,6 +112,7 @@ print(c1.varC)"""
 
 # Super Method 
 # super() method is used to access methods of the parent class. 
+"""
 class Car:
     def __init__(self, type):
         self.type = type
@@ -132,13 +133,36 @@ class ToyotaCar(Car):
         
 car1 = ToyotaCar("prius", "electrc")
 print(car1.type)
+"""
 
 # class Method 
 # A class method is bound to the class & receives the class as an implicit first argument.
 # Note - static method can't access or modify class state & generally for utility.
+"""
 class Person:
     name = "anonymous"
-    
+
+    # def changeName(obj, name):
+    #     self.__class__.name = "Rahul"
+        
+    @classmethod
+    def changeName(cls, name):
+        cls.name = name
+        
+p1 = Person()
+p1.changeName("rahul kumar")
+print(p1.name)  
+"""
+class Stud:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+        self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+        
+stu1 = Stud(98, 85, 97)
+print(stu1.percentage)
+  
 
 
 
