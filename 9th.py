@@ -13,6 +13,8 @@ del s1.name
 print(s1.name)
 """
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 # Private(like) attributes & methods
 # Conceptual Implementations in Python
 # Private attributes & methods ate meant to be used only within the class and are not accessible from outside the class.
@@ -43,6 +45,8 @@ class Person:
 p1 = Person()
 print(p1.welcome())
 """
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 # Inheritence
 # When one class(child/derived) derives the peroperties & methods of another class(parent/base). 
@@ -110,6 +114,8 @@ print(c1.varA)
 print(c1.varB)
 print(c1.varC)"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 # Super Method 
 # super() method is used to access methods of the parent class. 
 """
@@ -154,6 +160,8 @@ p1.changeName("rahul kumar")
 print(p1.name)  
 """
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 # Property 
 # We use @property decorator on any method in the class to use the method as a property 
 
@@ -177,6 +185,8 @@ print(stu1.percentage)
 stu1.phy = 89
 print(stu1.percentage)
 """
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   
 # Polymorphism : Operator Overloading
 # When the same operator is allowed to have different meaning according to the context.
@@ -197,6 +207,7 @@ print(type([1, 2, 3]))
 
 # Opration Overloading for classes
 
+"""
 class Complex:
     def __init__(self, real, img):
         self.real = real
@@ -221,12 +232,14 @@ num1.showNumber()
 num2 = Complex(4, 6)
 num2.showNumber()
 
-num3 = num1 + num2 #for addition
-num3.showNumber()
+# num3 = num1 + num2 #for addition
+# num3.showNumber()
 
 num3 = num1 - num2 #for substraction
 num3.showNumber()
+"""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
