@@ -157,6 +157,7 @@ print(p1.name)
 # Property 
 # We use @property decorator on any method in the class to use the method as a property 
 
+"""
 class Stud:
     def __init__(self, phy, chem, math):
         self.phy = phy
@@ -175,9 +176,17 @@ print(stu1.percentage)
 
 stu1.phy = 89
 print(stu1.percentage)
+"""
   
+# Polymorphism : Operator Overloading
+# When the same operator is allowed to have different meaning according to the context.
 
+# Operator & Dunder functions: a+b(a.__add__b), a-b(a.__sub__b), a*b(a.__mul____b), 
+# a/b(a.__truediv____b), a%b(a.__mod____b)
 
+print(1 + 2) #3
+print("ganesh" + "jadhav") #concatenate
+print([1, 2, 3] + [4, 5, 6]) #merge
 
 
 
