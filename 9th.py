@@ -14,6 +14,16 @@ print(s1.name)
 """
 
 
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.__acc_pass = acc_pass # "__"means this is private
+        
+    
+        
+acc1 = Account("65489723", "GSJ21")
+print(acc1.acc_no)
+print(acc1.__acc_pass)
 
 
 
