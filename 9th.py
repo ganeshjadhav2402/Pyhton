@@ -184,13 +184,48 @@ print(stu1.percentage)
 # Operator & Dunder functions: a+b(a.__add__b), a-b(a.__sub__b), a*b(a.__mul____b), 
 # a/b(a.__truediv____b), a%b(a.__mod____b)
 
-print(1 + 2) #3
-print("ganesh" + "jadhav") #concatenate
-print([1, 2, 3] + [4, 5, 6]) #merge
+"""
+print(1 + 2) #3 for nummbers
+print(type(1))
 
+print("ganesh" + "jadhav") #concatenate for strings
+print(type("ganesh"))
 
+print([1, 2, 3] + [4, 5, 6]) #merge for list
+print(type([1, 2, 3]))
+"""
 
+# Opration Overloading for classes
 
+class Complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+        
+    def showNumber(self):
+        print(self.real,"i +", self.img,"j")
+        
+    def __add__(self, obj):
+        newReal = self.real + obj.real
+        newImg = self.img + obj.img
+        return Complex(newReal, newImg)
+    
+    def __sub__(self, obj):
+        newReal = self.real - obj.real
+        newImg = self.img - obj.img
+        return Complex(newReal, newImg)
+        
+num1 = Complex(1, 3)
+num1.showNumber()
+
+num2 = Complex(4, 6)
+num2.showNumber()
+
+num3 = num1 + num2 #for addition
+num3.showNumber()
+
+num3 = num1 - num2 #for substraction
+num3.showNumber()
 
 
 
