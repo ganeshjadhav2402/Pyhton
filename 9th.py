@@ -241,6 +241,74 @@ num3.showNumber()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+# Let's Practice
+# ◑ Qs. Define a Circle class to create a circle with radius r using the constructor.
+# Define an Area() method of the class which calculates the area of the circle.
+# Define a Perimeter() method of the class which allows you to calculate the perimeter of the circle.
+
+"""
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):  #define area method
+        return (22/7) * self.radius ** 2
+    
+    def perimeter(self):  #define perimeter method
+        return 2 * (22/7) * self.radius
+
+c1 = Circle(21)
+print("Circle Radius Area :",c1.area())
+print("Circle Radius Perimeter :",c1.perimeter())
+"""
+
+# ◑ Qs. Define a Employee class with attributes role, department & salary. This class also 
+# showDetails() method. Create an Engineer class that inherits properties from Employee & has additional name and age.
+
+"""
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
+        
+    def showDetails(self):
+        print("role =", self.role)
+        print("dept =", self.dept)
+        print("salary =", self.salary)
+    
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "75,000")
+        
+engg1 = Engineer("Jeff Basos", 46)
+engg1.showDetails()
+# e1 = Employee("accountant", "Finance", "60,000")
+# e1.showDetails()
+"""
+
+# ◑ Qs. Create a class called Order which stores item & its price.
+#        Use Dunder function__gt__() to convey that:
+#              order1 > order2 if price of order1 > price of order2
+
+"""
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+        
+    def __gt__(self, odr2): #dunder function using __gt__
+        return self.price > odr2.price
+        
+odr1 = Order("chips", 20)
+odr2 = Order("tea", 10)
+
+print(odr1 > odr2) #True
+"""
+
+
 
 
 
