@@ -46,6 +46,8 @@ print(p1.welcome())
 
 # Inheritence
 # When one class(child/derived) derives the peroperties & methods of another class(parent/base). 
+# Single Inheritance
+"""
 class Car:
     color = "black"
     @staticmethod
@@ -65,8 +67,75 @@ car2 = ToyotaCar("pirus")
 
 print(car1.name)
 print(car1.start())
+"""
 
-# Three Types Inheritance: Single Inheritance, Multi-level Inheritance, Multiple Inheritance
+# Three Types Inheri: Single Inheritance, Multi-level Inheritance, Multiple Inheritance
+# Multi-level Inheritance
+"""
+class Car:
+    color = "black"
+    @staticmethod
+    def start():
+        print("car started..")
+    
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class ToyotaCar(Car):
+    def __init__(self, brand):
+        self.brand = brand
+
+class Fortuner(ToyotaCar):
+    def __init__(self, type):
+        self.type = type
+
+car1 = Fortuner("diesel")
+car1.start()
+"""
+
+# Multiple Inheritance
+"""class A:
+    varA = "welcome to class A"
+
+class B:
+    varB = "welcome to class B"
+    
+class C(A, B):
+    varC = "welcome to calss C"
+    
+c1 = C()
+
+print(c1.varA)
+print(c1.varB)
+print(c1.varC)"""
+
+# Super Method 
+# super() method is used to access methods of the parent class. 
+class Car:
+    def __init__(self, type):
+        self.type = type
+    
+    @staticmethod
+    def start():
+        print("car started..")
+    
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class ToyotaCar(Car):
+    def __init__(self, name, type):
+        super().__init__(type)
+        self.name = name
+        super().start()
+        
+car1 = ToyotaCar("prius", "electrc")
+print(car1.type)
+
+
+
+
 
 
 
