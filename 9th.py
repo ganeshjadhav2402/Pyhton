@@ -16,6 +16,7 @@ print(s1.name)
 # Private(like) attributes & methods
 # Conceptual Implementations in Python
 # Private attributes & methods ate meant to be used only within the class and are not accessible from outside the class.
+"""
 class Account:
     def __init__(self, acc_no, acc_pass):
         self.acc_no = acc_no
@@ -27,11 +28,45 @@ class Account:
 acc1 = Account("65489723", "GSJ21")
 print(acc1.acc_no)
 print(acc1.reset_pass())
+"""
 
+"""
+class Person:
+    __name = "anonymous"
+    
+    def __hello(self):
+        print("hello person!")
 
+    def welcome(self):
+        self.__hello()
+        
+p1 = Person()
+print(p1.welcome())
+"""
 
+# Inheritence
+# When one class(child/derived) derives the peroperties & methods of another class(parent/base). 
+class Car:
+    color = "black"
+    @staticmethod
+    def start():
+        print("car started..")
+    
+    @staticmethod
+    def stop():
+        print("car stopped..")
 
+class ToyotaCar(Car):
+    def __init__(self, name):
+        self.name = name
 
+car1 = ToyotaCar("fortuner")
+car2 = ToyotaCar("pirus")
+
+print(car1.name)
+print(car1.start())
+
+# Three Types Inheritance: Single Inheritance, Multi-level Inheritance, Multiple Inheritance
 
 
 
