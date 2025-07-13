@@ -245,7 +245,6 @@ num3.showNumber()
 # ◑ Qs. Define a Circle class to create a circle with radius r using the constructor.
 # Define an Area() method of the class which calculates the area of the circle.
 # Define a Perimeter() method of the class which allows you to calculate the perimeter of the circle.
-
 """
 class Circle:
     def __init__(self, radius):
@@ -264,7 +263,6 @@ print("Circle Radius Perimeter :",c1.perimeter())
 
 # ◑ Qs. Define a Employee class with attributes role, department & salary. This class also 
 # showDetails() method. Create an Engineer class that inherits properties from Employee & has additional name and age.
-
 """
 class Employee:
     def __init__(self, role, dept, salary):
@@ -292,7 +290,6 @@ engg1.showDetails()
 # ◑ Qs. Create a class called Order which stores item & its price.
 #        Use Dunder function__gt__() to convey that:
 #              order1 > order2 if price of order1 > price of order2
-
 """
 class Order:
     def __init__(self, item, price):
