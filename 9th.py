@@ -153,14 +153,27 @@ p1 = Person()
 p1.changeName("rahul kumar")
 print(p1.name)  
 """
+
+# Property 
+# We use @property decorator on any method in the class to use the method as a property 
+
 class Stud:
     def __init__(self, phy, chem, math):
         self.phy = phy
         self.chem = chem
         self.math = math
-        self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+        
+    # def calcPercentage(self):
+    #     self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+    
+    @property   #latest value return method after new changes
+    def percentage(self):
+        return str((self.phy + self.chem + self.math) / 3) + "%"
         
 stu1 = Stud(98, 85, 97)
+print(stu1.percentage)
+
+stu1.phy = 89
 print(stu1.percentage)
   
 
