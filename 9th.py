@@ -218,7 +218,7 @@ class Complex:
         
     def __add__(self, obj):
         newReal = self.real + obj.real
-        newImg = self.img + obj.img
+        newImg = self.img + obj.img 
         return Complex(newReal, newImg)
     
     def __sub__(self, obj):
